@@ -5,10 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <title>Document</title>
+  <title>Login</title>
 </head>
 
 <body>
+  <div class="container">
+    <form class="login-form" id="auth-form">
+      <div class="form-content">
+        <h2 id="form-title">Log in to your account</h2>
+        <div class="form-tabs">
+          <button type="button" class="tab-btn active" id="tab-login">Login</button>
+          <button type="button" class="tab-btn" id="tab-register">Registration</button>
+        </div>
+
+        <div id="register-only-fields" style="display: none;">
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+        </div>
+
+        <input type="email" id="login" name="login" placeholder="Your email address" required />
+        <input type="password" id="password" name="password" placeholder="Enter password here" required />
+
+        <button type="submit" class="submit" id="submit-btn">Log In</button>
+      </div>
+
+      <div class="form-bottom">
+        <p id="form-toggle-text">Don't have an account yet?<a href="#" id="link-register">Sign Up</a></p>
+      </div>
+    </form>
+  </div>
 </body>
 <script src="scripts/script.js"></script>
 
